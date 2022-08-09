@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty of Sri Lanka | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style2.css">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
+
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
+
+    form.example button:hover {
+      background: #0b7dda;
+    }
+
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="header">
+    <!--navigation bar start here-->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/destination.png" width="120px" alt="">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li> <a href="index.html" style="color:white;">Home</a></li>
+            <li> <a href="gallery.html" style="color:white;">Gallery</a></li>
+            <li> <a href="map.html" style="color:white;">Map</a></li>
+            <li> <a href="Contactus.html" style="color:white;">Contact us</a></li>
+            <li> <a href="aboutus.html" style="color:white;">About Us</a></li>
+            <li> <a href="account.html" style="color:white;">Account</a></li>
+          </ul>
+        </nav>
+        <!-- <img src="images/cart.png" width="30px" height="30px"alt=""> -->
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <input style="border-top-left-radius: 10px; border-bottom-left-radius: 10px ;" type="text"
+            placeholder="Search.." name="search2">
+          <button style="border-top-right-radius: 10px; border-bottom-right-radius: 10px ; background-color: #ff523b; "
+            type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <!-- <input type="text" placeholder="&nbsp;&nbsp; Search..." style="border-radius:20px ; width: 150px; height: 25px; background-color: #C8C6C6; " >         -->
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="">
+      </div>
+      <center>
+        <h1 style="color: #f1f1f1;">Beauty of Sri Lanka</h1>
+        <Center>
+          <div class="row">
+            <!-- image slider start here -->
+            <div class="slider">
+              <div class="slides">
+                <!-- radio buttion start here -->
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+                <input type="radio" name="radio-btn" id="radio9">
+                <input type="radio" name="radio-btn" id="radio10">
+                <!-- radio buttion end here -->
+                <!-- slide images start here -->
+                <div class="slide first">
+                  <img src=images/1.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/2.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/3.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/4.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/5.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/6.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/7.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/8.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/9.jpg alt="">
+                </div>
+                <div class="slide">
+                  <img src=images/10.jpg alt="">
+                </div>
+                <!-- slide images end here -->
+                <!-- automatic navigation start here -->
+                <div class="navigation-auto">
+                  <div class="auto-but1"></div>
+                  <div class="auto-but2"></div>
+                  <div class="auto-but3"></div>
+                  <div class="auto-but4"></div>
+                  <div class="auto-but5"></div>
+                  <div class="auto-but6"></div>
+                  <div class="auto-but7"></div>
+                  <div class="auto-but8"></div>
+                  <div class="auto-but9"></div>
+                  <div class="auto-but10"></div>
+                </div>
+                <!-- automatic navigation End here -->
+              </div>
+              <!-- manual navigation start here -->
+              <div class="navigation-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+                <label for="radio5" class="manual-btn"></label>
+                <label for="radio6" class="manual-btn"></label>
+                <label for="radio7" class="manual-btn"></label>
+                <label for="radio8" class="manual-btn"></label>
+                <label for="radio9" class="manual-btn"></label>
+                <label for="radio10" class="manual-btn"></label>
+              </div>
+              <!-- manual navigation End here -->
+            </div>
+            <!-- image slider end here -->
+          </div>
+    </div>
+  </div>
+  <!--*navigation bar end here*-->
+  <!--Explore the Paradise-->
+  <div class="small-container">
+    <h2 style="margin-top: 50px;" class="title">Explore the Paradise</h2>
+    <div class="row" style="background-color: #DFD8CA; ">
+      <div class="col-4">
+        <a href="#"><img src="images/tiger.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">WILD</h2>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/thrills.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">THRILLS</h2>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/heritage.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">HERITAGE</h2>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/bless.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">BLESS</h2>
+        </center>
+      </div>
+    </div>
+    <div class="row" style="background-color: #DFD8CA;">
+      <div class="col-4">
+        <a href="#"><img src="images/spices.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">ESSENCE</h2>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/senic.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">PRISTINE</h2>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/senicsssss.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">SCENIC</h2>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/festival.png" alt=""></a>
+        <center>
+          <h2 style="color: #483434;">FESTIVAL</h2>
+        </center>
+      </div>
+    </div>
+    <h2 style="margin-top: 50px;" class="title"> Plan Your Dream Holiday </h2>
+    <div class="row">
+      <div class="col-4">
+        <a href="#"><img src="images/unique-places.png" alt=""></a>
+        <center>
+          <h4>Things to See and Do</h4>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/trav-agent.png" alt=""></a>
+        <center>
+          <h4>Find a Travel Agent</h4>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/pass.png" alt=""></a>
+        <center>
+          <h4>Apply Visa Online</h4>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/plane.png" alt=""></a>
+        <center>
+          <h4>Book a Flight</h4>
+        </center>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <a href="#"><img src="images/hotel.png" alt=""></a>
+        <center>
+          <h4>Find your Accommodation</h4>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/tourist-g.png" alt=""></a>
+        <center>
+          <h4>Find a Tour Guid</h4>
+        </center>
+      </div>
+      <div class="col-4">
+        <a href="#"><img src="images/driver.png" alt=""></a>
+        <center>
+          <h4>Find a Tour Driver</h4>
+        </center>
+      </div>
+    </div>
+  </div>
+  <!---------------------Offer----------------->
+  <div class="offer">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-2">
+          <img src="images/Kite Flying.png" class="offer-img" alt="">
+          <center>
+            <h3>Kitesurfing</h3>
+          </center>
+        </div>
+        <div class="col-2">
+          <h1>Upcoming Events
+            & Festivals</h1>
+          <small>Each place, and each smile in Sri Lanka has a story to tell. We have so much to share with you, so come
+            along to our island in paradise!</small><br>
+          <a href="" class="btn">See All Events &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------testimonial----------------->
+  <div class="testimonial">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p> I always wanted to visit Sri Lanka so that answers the question. For me the high lites were the Greenery,
+            sunlight, lakes & good transportation. The food & service was very good. The monuments were not my interest
+            as i am more of a traveller than a tourist. people & History of Sri Lanka.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <img src="images/user-1.png" alt="">
+          <h3>Sean Parker</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p> Great destination with plenty of diverse cultural and natural attractions. Good value for money and a fun
+            holiday for us as a family with young children. Friendly and helpful locals. Not over run with tourists but
+            that is probably due to the recent incidents leading to many cancellations.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <img src="images/user-2.png" alt="">
+          <h3>Mike Smith</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>I found Sri Lanka a wonderful destination with good food and very friendly people. Our driver certainly
+            helped make our trip memorable. He brought us to places we were interested in that were not on our
+            itinerary.Love you Sri Lanka. I will definitely visit again.
+          </p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <img src="images/user-3.png" alt="">
+          <h3>Mobel Joe</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------Brands----------------->
+  <div class="brands">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-5">
+          <img src="images/SriLanka.png" alt="">
+        </div>
+        <div class="col-5" style="padding-bottom: 10px;">
+          <img src="images/srilankanair.png" alt="">
+        </div>
+        <div class="col-5">
+          <img src="images/pecock.png" alt="">
+        </div>
+        <div class="col-5">
+          <img src="images/figga.png" alt="">
+        </div>
+        <div class="col-5">
+          <img src="images/echo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!---------------------footer----------------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col-1">
+          <h3>Download Our App</h3>
+          <p>Download App for Android and ios mobile phone.</p>
+          <div class="app-logo">
+            <a href="https://play.google.com/store/movies"><img src="images/play-store.png" alt=""></a>
+            <a href="https://www.apple.com/store"><img src="images/app-store.png" alt=""></a>
+          </div>
+        </div>
+        <div class="footer-col-2">
+          <a href="#"><img src="images/destination.png" alt=""></a>
+          <p>Sri Lanka, formerly known as Ceylon, and officially the Democratic Socialist Republic of Sri Lanka, is an
+            island country in South Asia.</p>
+        </div>
+        <div class="footer-col-3">
+          <h3>Useful Links</h3>
+          <ul>
+            <a href="https://www.sltda.gov.lk/en">
+              <li>Sri Lanka Tourism Dev. Aau.</li>
+            </a>
+            <a href="https://meetinsrilanka.com/">
+              <li>Sri Lanka Tourism Con. Bu.</li>
+            </a>
+            <a href="https://www.tourismmin.gov.lk/">
+              <li>Ministry of Tourism</li>
+            </a>
+            <a href="https://www.srilankan.com/en_uk/lk">
+              <li>Sri Lankan Airlines</li>
+            </a>
+          </ul>
+        </div>
+        <div class="footer-col-4">
+          <h3>Follow Us</h3>
+          <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+      <center>
+        <p class="copyright">Copyright 2021 - Prabuddha Samaraghe</p>
+      </center>
+    </div>
+  </div>
+  <!--------Js For toggle Menu------->
+  <script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle() {
+      if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
+      }
+      else {
+        MenuItems.style.maxHeight = "0px";
+      }
+    }
+  </script>
+  <script type="text/javascript">
+    var counter = 1;
+    setInterval(function () {
+      document.getElementById('radio' + counter).checked = true;
+      counter++;
+      if (counter > 10) {
+        counter = 1;
+      }
+
+    }, 4000);
+  </script>
+</body>
+
+</html>

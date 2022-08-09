@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beauty of Sri Lanka | Gallery </title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+  
+  <style>
+    form.example input[type=text] {
+      padding: 10px;
+      font-size: 17px;
+      border: 1px solid grey;
+      float: left;
+      width: 80%;
+      background: #f1f1f1;
+    }
+
+    form.example button {
+      float: left;
+      width: 20%;
+      padding: 10px;
+      background: #2196F3;
+      color: white;
+      font-size: 17px;
+      border: 1px solid grey;
+      border-left: none;
+      cursor: pointer;
+    }
+
+    form.example button:hover {
+      background: #0b7dda;
+    }
+
+    form.example::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .about-section {
+  padding: 50px;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
+  background-color: #5a5d63;
+  color: white;
+}
+
+  </style>
+  
+</head>
+
+<body style="background-color: rgb(94, 92, 92);">
+  <div class="header2">
+    <!--navigation bar start here-->
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <img src="images/destination.png" width="120px" alt="">
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li> <a href="index.html" style="color:white;">Home</a></li>
+            <li> <a href="gallery.html" style="color:white;">Gallery</a></li>
+            <li> <a href="map.html" style="color:white;">Map</a></li>
+            <li> <a href="Contactus.html" style="color:white;">Contact us</a></li>
+            <li> <a href="aboutus.html" style="color:white;">About Us</a></li>            
+            <li> <a href="account.html" style="color:white;">Account</a></li>
+          </ul>
+        </nav>
+        <!-- <img src="images/cart.png" width="30px" height="30px"alt=""> -->
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <input style="border-top-left-radius: 10px; border-bottom-left-radius: 10px ;" type="text"
+            placeholder="Search.." name="search2">
+          <button style="border-top-right-radius: 10px; border-bottom-right-radius: 10px ; background-color: #ff523b; "
+            type="submit"><i class="fa fa-search"></i></button>
+        </form>
+        <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" alt="">
+      </div>
+      <div class="row">
+      </div>
+    </div>
+  </div>
+  <!--*navigation bar end here*-->
+  <center><h1 style="margin-top: 15px; margin-bottom: 10px; color: white;" class="title">Beauty of Sri Lanka</h1><Center>
+    
+    <center><h1 style="color:rgb(194, 197, 199); ">Gallery</h1><Center>
+  
+      <div class="containers">
+
+        <div class="feature">
+            <figure class="featured-item image-holder r-3-2 transition"></figure>
+        </div>
+
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 active transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                    <figure class="gallery-item image-holder r-3-2 transition"></figure>
+                </div>
+                <div class="item-wrapper">
+                  <figure class="gallery-item image-holder r-3-2 transition"></figure>
+              </div>
+              <div class="item-wrapper">
+                <figure class="gallery-item image-holder r-3-2 transition"></figure>
+            </div>
+            <div class="item-wrapper">
+              <figure class="gallery-item image-holder r-3-2 transition"></figure>
+          </div>
+          <div class="item-wrapper">
+            <figure class="gallery-item image-holder r-3-2 transition"></figure>
+        </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="move-btn left">&larr;</button>
+            <button class="move-btn right">&rarr;</button>
+        </div>
+
+    </div>
+
+    <p style="margin-top: 10px;" class="heading">Extra Gallery</p>
+    <div class="gallery-image">
+      <div class="img-box">
+        <img src="images/40.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Ancient</p>
+            <p class="opacity-low">Ancient Desitation</p>
+          </div>
+        </div> 
+      </div>
+      <div class="img-box">
+        <img src="images/41.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Ayurveda</p>
+            <p class="opacity-low">Ayurveda Spa</p>
+          </div>
+        </div>
+      </div>
+      <div class="img-box">
+        <img src="images/42.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Wild</p>
+            <p class="opacity-low">Wild Beauty</p>
+          </div>
+        </div>
+      </div>
+      <div class="img-box">
+        <img src="images/43.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Festival</p>
+            <p class="opacity-low">Traditional Festival</p>
+          </div>
+        </div> 
+      </div>
+      <div class="img-box">
+        <img src="images/44.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Pristine</p>
+            <p class="opacity-low">Pristine Beauty</p>
+          </div>
+        </div> 
+      </div>
+      <div class="img-box">
+        <img src="images/45.jpg" alt="" />
+        <div class="transparent-box">
+          <div class="caption">
+            <p>Seanic</p>
+            <p class="opacity-low">Seanic Mountains</p>
+          </div>
+        </div> 
+      </div>
+    </div>
+
+    <h1 style="margin-top: 25px; color: white;">Video Gallery</h1>
+    <section>
+     
+      <div class="container3">
+        <div class="main-video">
+            <video src="videos/button.mp4" autoplay muted controls></video>
+            <i class='bx bx-x close'></i>
+        </div>
+        <div class="videos">
+          <video poster="images/1.jpg" src="Videos/Sri Lanka - Heart of the Indian Ocean.mp4"></video>
+          <i class='bx bx-play-circle'></i>
+        </div>
+        <div class="videos">
+          <video poster="images/3.jpg" src="Videos/244.mp4"></video>
+          <i class='bx bx-play-circle'></i>
+        </div>
+        <div class="videos">
+          <video poster="images/4.jpg" src="Videos/Sri Lanka - Heart of the Indian Ocean.mp4"></video>
+          <i class='bx bx-play-circle'></i>
+        </div>
+        <div class="videos">
+          <video  poster="images/5.jpg" src="Videos/244.mp4"></video>
+          <i class='bx bx-play-circle'></i>
+        </div>
+      </div>
+    </section>
+
+  <!---------------------footer----------------->
+  <div class="footer">
+    <div class="container">
+      <div class="row">
+
+      </div>
+      <hr>
+      <center>
+        <p class="copyright">Copyright 2021 - Prabuddha Samaraghe</p>
+      </center>
+    </div>
+  </div>
+  <!--------Js For toggle Menu------->
+  
+</body>
+<script>
+  var gallery = document.querySelector('.gallery');
+var galleryItems = document.querySelectorAll('.gallery-item');
+var numOfItems = gallery.children.length;
+var itemWidth = 23; // percent: as set in css
+
+var featured = document.querySelector('.featured-item');
+
+var leftBtn = document.querySelector('.move-btn.left');
+var rightBtn = document.querySelector('.move-btn.right');
+var leftInterval;
+var rightInterval;
+
+var scrollRate = 0.2;
+var left;
+
+function selectItem(e) {
+if (e.target.classList.contains('active')) return;
+
+featured.style.backgroundImage = e.target.style.backgroundImage;
+
+for (var i = 0; i < galleryItems.length; i++) {
+  if (galleryItems[i].classList.contains('active'))
+    galleryItems[i].classList.remove('active');
+}
+
+e.target.classList.add('active');
+}
+
+function galleryWrapLeft() {
+var first = gallery.children[0];
+gallery.removeChild(first);
+gallery.style.left = -itemWidth + '%';
+gallery.appendChild(first);
+gallery.style.left = '0%';
+}
+
+function galleryWrapRight() {
+var last = gallery.children[gallery.children.length - 1];
+gallery.removeChild(last);
+gallery.insertBefore(last, gallery.children[0]);
+gallery.style.left = '-23%';
+}
+
+function moveLeft() {
+left = left || 0;
+
+leftInterval = setInterval(function() {
+  gallery.style.left = left + '%';
+
+  if (left > -itemWidth) {
+    left -= scrollRate;
+  } else {
+    left = 0;
+    galleryWrapLeft();
+  }
+}, 1);
+}
+
+function moveRight() {
+//Make sure there is element to the leftd
+if (left > -itemWidth && left < 0) {
+  left = left  - itemWidth;
+  
+  var last = gallery.children[gallery.children.length - 1];
+  gallery.removeChild(last);
+  gallery.style.left = left + '%';
+  gallery.insertBefore(last, gallery.children[0]);	
+}
+
+left = left || 0;
+
+leftInterval = setInterval(function() {
+  gallery.style.left = left + '%';
+
+  if (left < 0) {
+    left += scrollRate;
+  } else {
+    left = -itemWidth;
+    galleryWrapRight();
+  }
+}, 1);
+}
+
+function stopMovement() {
+clearInterval(leftInterval);
+clearInterval(rightInterval);
+}
+
+leftBtn.addEventListener('mouseenter', moveLeft);
+leftBtn.addEventListener('mouseleave', stopMovement);
+rightBtn.addEventListener('mouseenter', moveRight);
+rightBtn.addEventListener('mouseleave', stopMovement);
+
+
+//Start this baby up
+(function init() {
+var images = [
+  'images/1.jpg',
+  'images/2.jpg',
+  'images/deer.jpg',
+  'images/4.jpg',
+  'images/9.jpg',
+  'images/8.jpg',
+  'images/25.jpg',
+  'images/26.jpeg',
+  'images/27.jpg',
+  'images/7.jpg',
+  'images/28.jpg',
+  'images/29.jpg',
+  'images/30.jpg',
+  'images/31.jpg',
+];
+
+//Set Initial Featured Image
+featured.style.backgroundImage = 'url(' + images[0] + ')';
+
+//Set Images for Gallery and Add Event Listeners
+for (var i = 0; i < galleryItems.length; i++) {
+  galleryItems[i].style.backgroundImage = 'url(' + images[i] + ')';
+  galleryItems[i].addEventListener('click', selectItem);
+}
+})();
+</script>
+<script>
+  const section = document.querySelector("section"),
+  mainVideo = document.querySelector(".main-video video"),
+   videos = document.querySelectorAll(".videos"),
+   close = document.querySelector(".close");
+
+   for (var i = 0; i < videos.length; i++) {
+     videos[i].addEventListener("click", (e)=>{
+       const target = e.target;
+       section.classList.add("active");
+       target.classList.add("active");
+       let src = document.querySelector(".videos.active video").src;
+       mainVideo.src = src;
+
+       close.addEventListener("click", ()=>{
+         section.classList.remove("active");
+         target.classList.remove("active");
+         mainVideo.src = "";
+       });
+     });
+   };
+</script>
+</html>
